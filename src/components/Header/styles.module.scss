@@ -3,7 +3,7 @@
   border-bottom: 1px solid var(--grey-700);
 }
 
-.headerContent{
+.headerContent {
   max-width: 1020px;
   height: 5rem;
   margin: 0 auto;
@@ -26,7 +26,7 @@
 
       transition: color 0.2s;
 
-      & + a {
+      &+a {
         margin-left: 2rem;
       }
 
@@ -42,16 +42,19 @@
       }
 
       &.active::after {
-        content:'';
+        content: '';
         height: 3px;
         border-radius: 3px 3px 0 0;
         width: 100%;
-        position:absolute;
+        position: absolute;
         bottom: 1px;
         left: 0;
         background: var(--yellow-500);
       }
     }
   }
-}
 
+  button {
+    margin-left: auto;
+  }
+}
